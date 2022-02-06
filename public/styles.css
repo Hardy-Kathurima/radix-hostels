@@ -1,0 +1,216 @@
+header::after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity:.6;
+    z-index: 0;
+   
+    
+}
+header{
+    position: relative;
+}
+header >*{
+z-index: 10;
+position: relative;
+color: white;
+}
+
+header{
+    background: url(images/banner-2.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    position: relative;
+}
+.action-btn{
+    background-color:#f36f21 !important ;
+    outline: 0 !important;
+    border: 1px solid white !important;
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+}
+.image-view{
+    outline-color: white;
+    outline-style: double;
+    outline-width: 5px;
+    outline-offset: -25px;
+    border: 5px solid white;
+}
+.intro{
+    background-color: #efeff2;
+}
+.meeting-img{
+  
+    background: url(images/meeting.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    position: relative;
+    outline-color: white;
+    outline-style: double;
+    outline-width: 5px;
+    outline-offset: -25px;
+    border: 5px solid white;
+    
+}
+.meeting-img{
+    position: relative;
+}
+.meeting-img::after{
+    content:"";
+    display: block;
+    width: 30%;
+    height: 100%;
+    background-color:white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity:.8;
+    z-index: 0;
+}
+.meeting-img >*{
+    z-index: 10;
+    position: relative;
+    color: white;
+    }
+    .img-content{
+        position: absolute;
+        width: 30%;
+        color: #333;
+        height: 100%;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        padding: 20px;
+        z-index: 100;
+        
+    }
+    .bedroom{
+        background: url(images/bed-1.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 400px;
+        position: relative;
+    }
+    .bedroom::after{
+        content:"";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity:.8;
+    z-index: 0;
+    }
+    .bedroom >*{
+        z-index: 10;
+        position: relative;
+        color: white;
+
+    }
+    .footer-content{
+        background-color: #454545;
+        color:white;
+    }
+    ul{
+        list-style-type: none;
+    }
+    ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        color:lightgray;
+    }
+.section-two{
+    position: relative;
+}
+.section-two::after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity:.9;
+    z-index: 0;
+}
+.section-two >*{
+    z-index: 10;
+    position: relative;
+    color: white;
+
+}
+.animate-border{
+    min-height: 300px;
+    position:relative;
+}
+.animate-border::before{
+    content:"";
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 2px double transparent;
+    border-left: 2px double transparent;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity:.9;
+    z-index: 0;
+    transition: all .8s ease;
+}
+.animate-border::after{
+    content:"";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 2px double transparent;
+    border-right: 2px double transparent;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity:.9;
+    z-index: 0;
+    transition: all .8s ease;
+}
+.animate-border >*{
+    z-index: 10;
+    position: relative;
+    color: white;
+}
+.animate-parent:hover .animate-border::after{
+border-color: white;
+width: 100%;
+height: 100%;
+}
+.animate-parent:hover .animate-border::before{
+    border-color: white;
+width: 100%;
+height: 100%;
+}
+
+
+@media screen and (max-width:670px){
+    header{
+        min-height: 500px;
+    }
+    .meeting-img{
+        min-height: 300px;
+    }
+    .meeting-img >*{
+  display: none;
+        }
+        .meeting-img::after{
+            display: none;
+        }
+}
