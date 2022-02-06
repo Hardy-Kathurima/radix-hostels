@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 header::after{
     content:"";
     display: block;
@@ -211,6 +214,9 @@ height: 100%;
   display: none;
         }
         .meeting-img::after{
+            display: none;
+        }
+        #nav-item{
             display: none;
         }
 }
